@@ -1,0 +1,8 @@
+C:\Users\Camilo\source\repos\demogit\demogit\demogit\bin\Debug\demogit.exe.config
+C:\Users\Camilo\source\repos\demogit\demogit\demogit\bin\Debug\demogit.exe
+C:\Users\Camilo\source\repos\demogit\demogit\demogit\bin\Debug\demogit.pdb
+C:\Users\Camilo\source\repos\demogit\demogit\demogit\obj\Debug\demogit.csproj.AssemblyReference.cache
+C:\Users\Camilo\source\repos\demogit\demogit\demogit\obj\Debug\demogit.csproj.CoreCompileInputs.cache
+C:\Users\Camilo\source\repos\demogit\demogit\demogit\obj\Debug\demogit.exe
+C:\Users\Camilo\source\repos\demogit\demogit\demogit\obj\Debug\demogit.pdb
+C:\Users\Camilo\source\repos\demogit\demogit\demogit\obj\Debug\demogit.exe.config
