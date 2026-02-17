@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace demogit
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Uri orgUrl = new Url("https://dev.ozure.com/");
+            String personalAccessToken = "";
+            int workItemId = 2;
+
+            //create connection
+            VssConection connection = new VssConection(orgUrl, new VssBasicCredential(string.Empty, personalAccessToken));
+
+            //show details a work item
+            ShowWorkItemDetails(connection, workItemId).Wait();
+
+        }
+
+        static private async Task ShowWorkItemDetails(VssConection connection, int workItemId)
+        {
+            //get work item tracking client
+            WorkItemTrackingHttpClient witClient = connection.GetClient<WorkItemTrackingHttpClient>();
+            //get work item details
+            WorkItem workItem = await witClient.GetWorkItemAsync(workItemId);
+            Console.WriteLine("Work Item ID: {0}", workItem.Id);
+            Console.WriteLine("Title: {0}", workItem.Fields["System.Title"]);
+            Console.WriteLine("State: {0}", workItem.Fields["System.State"]);
+        }
+}
